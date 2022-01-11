@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVC & IF</title>
+</head>
+<body>
+    <!-- supersimpel chatbot -->
+
+  <div id="app"></div>  
+
+  <script>
+    const appDiv = document.getElementById('app');
+    let chatInput = "";
+
+
+    drawChatwindow();
+    function drawChatwindow(){
+      appDiv.innerHTML = ` <input id="chatbox" type="text" onchange="chatInput = this.value">
+      <button onclick="sendMessage()">Send Message</button>
+      `; 
+    }
+
+
+    function sendMessage(){
+     appDiv.innerHTML += ` <br> ${chatInput}`;
+
+     //vente litt før svar
+     setTimeout(() => {replyToMessage()}, 1000)
+     
+      
+    }
+
+    function replyToMessage(){
+// legge inn noen if conditions
+      if(chatInput == "hei" || chatInput == "hallo")appDiv.innerHTML += ` <br> heisann!`;
+      if(chatInput == "går det bra?" || chatInput == "Åssen gårre?")appDiv.innerHTML += ` <br> Det går bare bra med meg, takk som spør! <br> Hvordan går det med deg?`;
+      if(chatInput == "bra")appDiv.innerHTML += ` <br> Det var godt å høre! <br> Ha en fin dag vidre!`;
+      if(chatInput == "ikke bra")appDiv.innerHTML += `<br> Huff da.. det var trist. Håper du får det bedre snart! <br> <img src="kitten.gif">`;
+    }
+
+  </script>
+</body>
+</html>

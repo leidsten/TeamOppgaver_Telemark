@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objekter & Lister av Objekter || Random Bossfight!</title>
+</head>
+<body>
+    <div id="app"></div>
+
+    <script>
+        const appDiv = document.getElementById('app');
+        let player = {
+            hp: 100,
+            attackPower: 20
+        };
+        let bosses = [
+            {
+                name: "Ragnaros",
+                hp: 150,
+                attackPower: 30,
+                img:'ragnar.jpg'
+            },
+            {
+                name: "Postman Pat",
+                hp: 40,
+                attackPower: 5,
+                img: 'pmpat.jpg'
+            },
+            {
+                name: "ShadowPlayer",
+                hp: 100,
+                attackPower: 20,
+                img: 'shdw.jpg'
+            }
+        ];
+        let randomBoss = {};
+        let someoneDied = "";
+
+        //getRandomBoss();
+        show();
+        function show(){
+            if(randomBoss.name == null){getRandomBoss();}
+            appDiv.innerHTML = `
+            YOU ENCOUNTERED ${randomBoss.name}! <br>
+            <img src="${randomBoss.img}"> <br>
+            boss hp left: ${randomBoss.hp} <br>
+            your hp left: ${player.hp} <br>
+            <button onclick="playerAttack()"> attack! </button> <button onclick="getRandomBoss()">New Enemy</button><br>
+            ${someoneDied}
+            `;
+        }
+
+
+
+        function getRandomBoss(){
+            let randonIndex = Math.floor(Math.random() * bosses.length);
+            randomBoss = bosses[randonIndex];
+            show();
+        }
+
+        function playerAttack(){
+            let crit = Math.round(Math.random() * 10);
+            let hitStrength = crit > 8 ? player.attackPower * 2 
+                                       : player.attackPower;
+            
+           if(!checkIfPlayerDies() && randomBoss.hp > 0){
+            randomBoss.hp = randomBoss.hp - hitStrength;
+           }
+
+            show();
+            checkIfPlayerDies();
+            bossAttack();
+        }
+
+        function bossAttack(){
+            let hitCalc = Math.round(Math.random() * 10);
+            let doesAttackttackHit = hitCalc > 7 ? true : false; 
+
+            if(!checkIfBossDies() && doesAttackttackHit){
+                player.hp = player.hp - randomBoss.attackPower;  
+            }
+            show();
+            checkIfBossDies();
+        }
+
+        function checkIfPlayerDies(){
+            if(player.hp <= 0){
+                player.hp = 0;
+                someoneDied = " You died."
+                return true;
+            }
+            show();
+        }
+
+
+        function checkIfBossDies(){
+            if(randomBoss.hp <= 0){
+                randomBoss.hp = 0;
+                someoneDied = " The boss died - congrats! You won!"
+                return true;
+            }
+            show();
+        }
+
+
+
+    </script>
+</body>
+</html>

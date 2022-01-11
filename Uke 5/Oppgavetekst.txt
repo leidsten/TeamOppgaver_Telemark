@@ -1,0 +1,20 @@
+**Teamoppgave Uke 5: Randomized Bossfight!**
+
+Siste teamoppgave går ut på å lage en app hvor det dukker opp en tilfeldig boss som man kan sloss mot.
+Bossene og player/hero skal ha HP, strength og muligheten for critical damage
+Mulighet til å møte på en ny random boss, eller fighte den som er trukket ut
+Vinn/Tap beskjed på skjermen, boss navn og HP + player name og HP skal også synes
+
+Bruk det dere har lært til nå, og det som står på moodle for denne uken for å løse oppgaven
+
+Tegn opp, planlegg og fordel oppgaver på teamet. Pass på at alle får bidratt, og få "Go!" fra Linn før dere går i gang med kodinga.
+Blir der tidlig ferdig så bruk resten av TP øktene til å slippe kreativiteten løs og "jazze opp" oppgaven
+
+Vi viser fram resultatene via skjermdeling i General Voice neste mandag til samme tid
+Gleder meg til å høre hvordan det har gått!
+
+Hint:
+||MVC, as usual ;)||
+||Objekter||
+||Array||
+||Math.random() ||

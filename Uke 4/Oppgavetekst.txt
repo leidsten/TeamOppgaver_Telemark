@@ -1,0 +1,17 @@
+**Teamoppgave Uke 4: Pokémon Catcher!**
+
+Denne uken skal dere bruke arrays og lage en liten app hvor det popper opp en random pokemon 
+som man enten kan fange og få lagret i teamet sitt eller å lete vidre etter en ny tilfeldig pokémon
+
+Bruk det dere har lært til nå, og det som står på moodle for denne uken for å løse oppgaven
+
+Tegn opp, planlegg og fordel oppgaver på teamet. Pass på at alle får bidratt, og få "Go!" fra Linn før dere går i gang med kodinga.
+Blir der tidlig ferdig så bruk resten av TP øktene til å slippe kreativiteten løs og "jazze opp" oppgaven
+
+Vi viser fram resultatene via skjermdeling i General Voice neste mandag til samme tid
+Gleder meg til å høre hvordan det har gått!
+
+Hint:
+||MVC, selvfølgelig ;)||
+||Array**S**||
+||Loops||

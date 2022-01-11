@@ -1,0 +1,14 @@
+**Første Teamoppgave: Inventory Filler!**
+Dere skal ha en variabel som sparer på det dere klikker på - som et "inventory" i et spill.
+Bruk det dere har lært til nå og det som kommer av stoff denne uka til å løse oppgaven.
+
+Tegn opp, planlegg og fordel oppgaver på teamet. Pass på at alle får bidratt, og få "Go!" fra Linn før dere går i gang med kodinga.
+Blir der tidlig ferdig så bruk resten av TP øktene til å slippe kreativiteten løs og "jazze opp" oppgaven
+
+Vi viser fram resultatene via skjermdeling i General Voice neste mandag til samme tid
+Gleder meg til å høre hvordan det har gått!
+
+Hint:
+||Variabel||
+||Parameter||
+||Return||
