@@ -3,7 +3,7 @@
 Denne uken skal dere bruke arrays og lage en liten app hvor det popper opp en random pokemon 
 som man enten kan fange og få lagret i teamet sitt eller å lete vidre etter en ny tilfeldig pokémon
 
-Bruk det dere har lært til nå, og det som står på moodle for denne uken for å løse oppgaven
+Bruk **MVC** og det andre dere har lært til nå, og det som står på moodle for denne uken for å løse oppgaven
 
 Tegn opp, planlegg og fordel oppgaver på teamet. Pass på at alle får bidratt, og få "Go!" fra Linn før dere går i gang med kodinga.
 Blir der tidlig ferdig så bruk resten av TP øktene til å slippe kreativiteten løs og "jazze opp" oppgaven
@@ -15,3 +15,4 @@ Hint:
 ||MVC, selvfølgelig ;)||
 ||Array**S**||
 ||Loops||
+||Ternary Operator kan være kjekt i en viss del av viewet... ;) ||
